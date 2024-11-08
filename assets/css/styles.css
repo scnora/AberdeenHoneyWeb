@@ -515,9 +515,55 @@ font-weight: var(--font-semi-bold);
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width:300px){
+  .container{
+    margin-inline:1rem;
+  }
 
+  .skills__content{
+    grid-template-columns: repeat(2,max-content);
+  }
+}
 
 /* For medium devices */
+@media screen and (min-width:540px){
+  .home__container,
+  .work__container,
+  .info__container,
+  .services__container,
+  .contact__container{
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width:768px){
+    .nav__menu{
+      width:50%;
+    }
+    .home__container{
+      grid-template-columns: repeat(2, 350px);
+    }
+    .home__data{
+      align-self: flex-end;
+      padding-bottom: 3rem;
+      order: -1;
+    }
+    .home__scroll{
+      grid-column: 1/3;
+    }
+
+    .aboutus__container{
+      grid-template-columns: repeat(2,350pxx);
+    }
+
+    .products__container{
+      grid-template-columns: initial;
+    }
+
+    .
+  }
+  
+}
 
 
 /* For large devices */
